@@ -1273,6 +1273,8 @@ void pcd_remove(dwc_bus_dev_t *_dev)
 	otg_dev->pcd = 0;
 }
 
+#if 0
+
 /**
  * This function registers a gadget driver with the PCD.
  *
@@ -1354,5 +1356,6 @@ int usb_gadget_unregister_driver(struct usb_gadget_driver *driver)
 }
 
 EXPORT_SYMBOL(usb_gadget_unregister_driver);
+#endif
 
 #endif /* DWC_HOST_ONLY */
